@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXORA — tecnologia para ir além. Loja demonstrativa de gadgets futuristas.">
+  <title>NEXORA — Tecnologia além do agora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Nexora início">NEX<span>O</span>RA</a>
+      <nav class="navlinks" aria-label="Navegação principal">
+        <a href="#produtos">Produtos</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <button class="cart-button" id="openCart" aria-label="Abrir carrinho">
+        Carrinho <span id="cartCount">(0)</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Tecnologia para ir além</div>
+          <h1>O futuro cabe<br>na <em>sua mão.</em></h1>
+          <p>
+            Gadgets inteligentes, design extraordinário e tecnologia feita para acompanhar o seu ritmo. Descubra a
+            próxima geração.
+          </p>
+          <div class="actions">
+            <a class="primary" href="#produtos">Explorar produtos ↗</a>
+            <a class="secondary" href="#vantagens">Por que NEXORA?</a>
+          </div>
+          <div class="trust">
+            <span>Seleção futurista</span>
+            <span>Compra simplificada</span>
+            <span>Suporte humano</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração abstrata de um dispositivo futurista">
+          <div class="device">
+            <div class="device-screen">✧</div>
+          </div>
+          <div class="art-label">DESIGNED FOR TOMORROW / 001</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Curadoria NEXORA</div>
+            <h2>Escolha seu próximo upgrade.</h2>
+            <p>Conheça os destaques da nossa coleção.</p>
+          </div>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar produtos">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="audio">Áudio</button>
+          <button class="filter" data-filter="wearables">Wearables</button>
+          <button class="filter" data-filter="acessorios">Acessórios</button>
+        </div>
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+
+    <section class="section" id="vantagens">
+      <div class="container">
+        <div class="eyebrow">Uma nova experiência</div>
+        <h2>Comprar tecnologia. Sem complicação.</h2>
+        <div class="perks">
+          <article class="perk">
+            <div class="perk-icon">✦</div>
+            <strong>Design selecionado</strong>
+            <p>Produtos escolhidos para combinar tecnologia, funcionalidade e visual marcante.</p>
+          </article>
+          <article class="perk">
+            <div class="perk-icon">⌁</div>
+            <strong>Experiência simples</strong>
+            <p>Encontre o que procura, adicione ao carrinho e confira seu pedido em poucos passos.</p>
+          </article>
+          <article class="perk">
+            <div class="perk-icon">◎</div>
+            <strong>Atendimento próximo</strong>
+            <p>Uma loja feita para deixar as informações claras e facilitar o contato com a equipe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Sobre a marca</div>
+            <h2>Não é só tecnologia. É o próximo passo.</h2>
+            <p>
+              A NEXORA é um conceito de loja virtual de gadgets futuristas. Personalize os produtos, preços e contatos
+              para lançar sua própria marca.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span class="brand">NEX<span>O</span>RA</span>
+      <span>© <span id="year"></span> NEXORA. Loja demonstrativa.</span>
+      <span>Instagram · WhatsApp · Contato (personalize antes de publicar)</span>
+    </div>
+  </footer>
+
+  <div class="notice" id="notice" role="status" aria-live="polite"></div>
+
+  <div class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-label="Seu carrinho">
+    <div class="cart">
+      <div class="cart-head">
+        <h2>Seu carrinho</h2>
+        <button class="close" id="closeCart">Fechar ✕</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">R$ 0,00</span>
+      </div>
+      <button class="primary checkout" id="checkout">Finalizar pedido</button>
+      <p style="font-size:0.78rem;color:var(--muted);line-height:1.5">
+        Demonstração: este protótipo não processa pagamentos nem envia pedidos reais.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
